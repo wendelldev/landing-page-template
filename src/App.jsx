@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
+import { Header } from "./components/header/header";
+import { Features } from "./components/features/features";
 import { About } from "./components/about/about";
-import { Services } from "./components/services";
+import { Services } from "./components/services/services";
 import { GallerySection } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -31,7 +30,6 @@ const App = () => {
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
       <GallerySection />
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>

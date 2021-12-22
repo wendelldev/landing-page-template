@@ -7,7 +7,6 @@ import {
   AboutContainer,
   AboutImage,
   AboutTextContainer,
-  Container,
   ContainerRow,
   ImageContainer,
   List,
@@ -15,6 +14,8 @@ import {
   ListItem,
   TextContainer
 } from "./about.styles";
+
+import { Container } from "../../shared/styled-components/containers.styles";
 
 export const About = (props) => {
   return (
