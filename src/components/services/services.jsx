@@ -1,29 +1,38 @@
 import { Container } from "../../shared/styled-components/containers.styles"
-import { ServicesContainer, ServicesRootContainer, ServicesSection, ServiceSubtitle, ServiceTitle } from "./services.styles"
+import { 
+  Service,
+  ServiceIcon,
+  ServiceItemText,
+  ServiceItemTitle,
+  ServicesContainer,
+  ServicesRootContainer,
+  ServicesSection,
+  ServicesSubtitle,
+  ServicesTitle
+} from "./services.styles"
 
 export const Services = (props) => {
   return (
     <ServicesRootContainer id='services'>
       <ServicesSection>
-        <ServiceTitle>Serviços</ServiceTitle>
-        <ServiceSubtitle>
+        <ServicesTitle>Serviços</ServicesTitle>
+        <ServicesSubtitle>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.
-        </ServiceSubtitle>
+        </ServicesSubtitle>
         
-        <div className='row'>
+        <ServicesContainer>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className='col-md-4'>
-                  {' '}
-                  <i className={d.icon}></i>
-                  <div className='service-desc'>
-                    <h3>{d.name}</h3>
-                    <p>{d.text}</p>
-                  </div>
-                </div>
+                <Service key={`${d.name}-${i}`}>
+                  <ServiceIcon>
+                    <i className={d.icon}></i>
+                  </ServiceIcon>
+                  <ServiceItemTitle>{d.name}</ServiceItemTitle>
+                  <ServiceItemText>{d.text}</ServiceItemText>
+                </Service>
               ))
             : 'loading'}
-        </div>
+        </ServicesContainer>
       </ServicesSection>
     </ServicesRootContainer>
   )

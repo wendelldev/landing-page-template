@@ -1,7 +1,9 @@
 import ImageGallery from "react-image-gallery";
+import { Subtitle, Text, Title } from "../../shared/styled-components/text.styles";
+import { GalleryContainer, GalleryRootContainer, GallerySection } from "./gallery.styles";
 
 
-export const GallerySection = (props) => {
+export const Gallery = (props) => {
 
   const imgs = [
     {
@@ -43,19 +45,17 @@ export const GallerySection = (props) => {
   ]
 
   return (
-    <div id='portfolio' className='text-center'>
-      <div className='container'>
-        <div className='section-title'>
-          <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
-        </div>
-        <div className='row'>
+    <GalleryRootContainer id='portfolio'>
+      <GallerySection>
+        <Title>Gallery</Title>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+          dapibus leonec.
+        </Text>
+        <GalleryContainer>
           <ImageGallery items={imgs} />
-        </div>
-      </div>
-    </div>
+        </GalleryContainer>
+      </GallerySection>
+    </GalleryRootContainer>
   )
 }
