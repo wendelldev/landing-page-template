@@ -5,7 +5,7 @@ export const Team = (props) => {
   return (
     <TeamRootContainer id='team'>
       <TeamSection>
-        <Title>Meet the Team</Title>
+        <Title>Conheça nosso time</Title>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
           dapibus leonec.

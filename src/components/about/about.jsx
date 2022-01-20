@@ -30,7 +30,7 @@ export const About = (props) => {
             <AboutTextContainer>
               <Title> Sobre nós </Title>
               <Text>{props.data ? props.data.paragraph : "loading..."}</Text>
-              <Subtitle>Why Choose Us?</Subtitle>
+              <Subtitle>Por que nos escolher?</Subtitle>
               <ListContainer>
                 <List>
                   <ul>

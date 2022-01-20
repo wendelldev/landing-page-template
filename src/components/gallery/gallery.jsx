@@ -47,7 +47,7 @@ export const Gallery = (props) => {
   return (
     <GalleryRootContainer id='portfolio'>
       <GallerySection>
-        <Title>Gallery</Title>
+        <Title>Galeria</Title>
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
           dapibus leonec.

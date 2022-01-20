@@ -6,7 +6,7 @@ import { About } from "./components/about/about";
 import { Services } from "./components/services/services";
 import { Gallery } from "./components/gallery/gallery";
 import { Team } from "./components/team/team";
-import { Contact } from "./components/contact";
+import { Contact } from "./components/contact/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
